@@ -23,10 +23,11 @@ body {
 
 .container_all {
   width: 100%;
-  background: #191919;
+  /* background: #191919; */
   min-height: 100vh;
   line-height: 2;
   background-image: url("../img/bg.svg");
+  background-repeat: repeat;
   /* background-color:rgba(255,255,255,0.90);
   background-blend-mode:lighten; */
 }
