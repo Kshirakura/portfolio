@@ -1,0 +1,270 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kosugi&family=Oxygen&display=swap');
+
+
+/* モバイルファーストで書いてみます */
+
+/* ------------
+全体
+------------ */
+
+html {
+  font-size:62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.5rem;
+  margin:0;
+  color: #222;
+  font-family: 'Oxygen', 'Kosugi', sans-serif;
+}
+
+.container_all {
+  width: 100%;
+  background: #191919;
+  min-height: 100vh;
+  line-height: 2;
+  background: url(/img/background.svg);
+  background-color:rgba(255,255,255,0.90);
+  background-blend-mode:lighten;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align:bottom;
+}
+
+/* --------
+slick
+--------*/
+.slick-prev, .slick-next {
+  z-index: 1;
+  display: none;
+}
+.slick-prev:before, .slick-next:before {
+  color: #fff;
+}
+.slick-slide {
+  transition: all linear 3s;
+  opacity: 1;
+}
+.slick-active {
+  opacity: 1;
+}
+.slick-current {
+  opacity: 1;
+}
+.thumb {
+  margin: 20px 0 0;
+}
+.thumb .slick-slide {
+  cursor: pointer;
+}
+.thumb .slick-slide:hover {
+  opacity: .7;
+}
+
+.slick-arrow {
+  display: none;
+}
+
+.container {
+  padding: 0 30px;
+}
+
+/*--------
+header
+------ */
+.header {
+  background: rgba(241,80,37, 0.6);
+  padding: 20px 0;
+  /* height: 80px; */
+}
+
+.menu_container ul {
+  display: flex;
+  justify-content: center;
+}
+
+.menu_container li {
+  margin-right: 2rem;
+  font-size: 2rem;
+}
+
+.menu_container li:last-child {
+  margin-right: 0;
+}
+
+.menu_container a {
+  color: #fff;
+}
+
+
+/*--------
+main
+#F15025 オレンジ
+#FFFFFF ホワイト
+#E6E8E6 ライトグレー
+#CED0CE グレー
+#191919 ブラック
+------ */
+.hero {
+  display: none;
+}
+
+
+.media_object_container .name {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 2.4rem;
+}
+
+.media_object_container .image {
+  padding-bottom: 30px;
+  /* margin-bottom: 30px; */
+  margin: 0 auto;
+  width: 200px;
+}
+
+.media_object_container .image img{
+  border-radius: 50%;
+}
+
+.my_info_container {
+  /* padding-top: 30px; */
+  padding-bottom: 30px;
+}
+
+
+ 
+/*--------
+footer
+------ */
+.footer {
+  text-align: center;
+  color: #fff;
+  background:rgba(25,25,25, 0.6);
+  height: 100%;
+}
+
+
+/*--------
+footer
+------ */
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+
+  .container {
+    padding: 0 60px;
+  }
+
+  /*--------
+  header
+  ------ */
+  .menu_container li{
+    font-size: 4rem;
+  }
+
+  /*--------
+  main
+  ------ */
+  .media_object_container{
+    font-size: 3rem;
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 90px;
+
+  }
+
+  .media_object_container .name {
+    padding-bottom: 60px;
+  }
+
+  .media_object_container .image {
+    padding: 0;
+    margin: 0 auto;
+
+  }
+
+  .my_info_container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .my_info_container h2 {
+    font-size: 3rem;
+  }
+
+  .my_info_container p {
+    font-size: 2rem;
+  }
+
+  /*--------
+  footer
+  ------ */
+  .footer_container {
+    text-align: center;
+    padding: 30px 0;
+  }
+
+  
+}
+
+@media (min-width: 1025px) {
+  .container {
+    width: 1020px;
+    margin: 0 auto;
+  }
+
+  .hero {
+    display: flex;
+  }
+
+  .media_object_container {
+    display: flex;
+    align-items: center;
+    padding: 100px 0 50px;
+  }
+
+  .media_object_container .hero {
+    width: 500px;
+  }
+
+  .media_object_container .name {
+    font-size: 2.4rem;
+    padding: 0;
+  }
+
+  .media_object_container .image {
+    margin: 0;
+    width: 10%;
+    margin-right: 100px;
+  }
+
+  .my_info_container {
+    padding: 60px 0;
+  }
+}
+

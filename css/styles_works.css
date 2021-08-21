@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kosugi&family=Oxygen&display=swap');
+
+/* モバイルファーストで書いてみます */
+
+
+
+
+/*--------
+main
+#F15025 オレンジ
+#FFFFFF ホワイト
+#E6E8E6 ライトグレー
+#CED0CE グレー
+#191919 ブラック
+------ */
+
+
+
+.title {
+  padding-top: 120px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.work {
+  background: #fff;
+  margin-bottom: 60px;
+}
+
+.work .text {
+  font-size: 1rem;
+}
+
+ 
+/*--------
+footer
+------ */
+.footer {
+  text-align: center;
+  color: #fff;
+  background:rgba(25,25,25, 0.6);
+}
+
+
+
+/*--------
+footer
+------ */
+
+
+
+@media (min-width: 768px) {
+
+
+  /*--------
+  main
+  ------ */
+  .title {
+    font-size: 2.1rem;
+  }
+
+  .work .text {
+    font-size: 1.5rem;
+  }
+
+  /*--------
+  footer
+  ------ */
+  .footer_container {
+    text-align: center;
+    padding: 30px 0;
+  }
+
+  
+}
+
+@media (min-width: 1025px) {
+
+  .sub_image {
+    width: 500px;
+  }
+}
+
