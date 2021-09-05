@@ -42,6 +42,10 @@ main
   font-weight: 400;
 }
 
+.page_desc {
+  margin-bottom: 2rem;
+}
+
 .visit_btn {
   text-align: center;
   display: block;
