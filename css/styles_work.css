@@ -17,6 +17,18 @@ main
 #191919 ブラック
 ------ */
 
+@keyframes appear {
+  0% {
+    height: 0%;
+  }
+
+  100% {
+    height: 0%;
+  }
+}
+
+
+
 .title {
   padding: 120px 0 60px;
   text-align: center;
@@ -27,6 +39,7 @@ main
   /* width: 200px; */
   /* margin: 0 auto; */
   text-align: center;
+  font-weight: 400;
 }
 
 .visit_btn {
@@ -119,6 +132,16 @@ footer
   .footer_container {
     text-align: center;
     padding: 30px 0;
+  }
+
+  @keyframes appear2 {
+    0% {
+      width: 0%;
+    }
+  
+    100% {
+      width: 0%;
+    }
   }
 
   
