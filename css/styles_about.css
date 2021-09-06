@@ -9,6 +9,31 @@ body {
 }
 
 
+
+.container_all:after {
+  content: '';
+  position: absolute;
+  width: 400%;
+  height: 100%;
+  z-index: 3;
+  background: #fff;
+  bottom: 0;
+  right: 0;
+  animation: slide-down2 2s ease forwards;
+  transform: skewX(30deg);
+}
+
+@keyframes slide-down2 {
+  0% {
+    right:-200%
+  }
+
+  100% {
+    right: -600%;
+  }
+}
+
+
 /*--------
 main
 #F15025 オレンジ
