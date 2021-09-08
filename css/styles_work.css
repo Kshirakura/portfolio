@@ -21,11 +21,11 @@ main
 
 @keyframes slide-down {
   0% {
-    right:-100%
+    right:-200%
   }
 
   100% {
-    right: -540%;
+    right: -600%;
   }
 }
 
@@ -42,7 +42,7 @@ main
 .container_all:after {
   content: '';
   position: absolute;
-  width: 360%;
+  width: 400%;
   height: 100%;
   z-index: 3;
   background: #fff;
