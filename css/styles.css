@@ -183,6 +183,7 @@ header
 .menu_container li {
   margin-right: 2rem;
   font-size: 2rem;
+  font-weight: 400;
 }
 
 .menu_container li:last-child {
