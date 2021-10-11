@@ -28,6 +28,16 @@ main
   }
 }
 
+@keyframes slide-down {
+  0% {
+    right:-100%
+  }
+
+  100% {
+    right: -500%;
+  }
+}
+
 
 
 .title {
